@@ -1,0 +1,16 @@
+@import './common/reset';
+@import './common/vars';
+@import './common/fonts';
+@import './common/global';
+@import './common/media';
+
+/**  Layouts  **/
+@import './layout/preloader';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/service';
+@import './layout/destination';
+@import './layout/experience';
+@import './layout/gallery';
+@import './layout/cta';
+@import './layout/footer';

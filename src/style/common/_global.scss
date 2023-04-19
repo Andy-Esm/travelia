@@ -1,0 +1,123 @@
+html {
+	font-family: var(--ff-poppins);
+	font-size: 10px;
+}
+
+body {
+	background-color: var(--bg-lavender-blush);
+	color: var(--text-granite-gray);
+	font-size: var(--fs-6);
+	line-height: 1.8;
+}
+[class*='__container'] {
+	padding-inline: 1.6rem;
+
+	@media (min-width: 575px) {
+		max-width: 540px;
+		width: 100%;
+		margin-inline: auto;
+	}
+
+	@media (min-width: 765px) {
+		max-width: 720px;
+	}
+
+	@media (min-width: 992px) {
+		max-width: 950px;
+	}
+
+	@media (min-width: 1200px) {
+		max-width: 1150px;
+	}
+}
+
+.btn {
+	height: 50px;
+	color: var(--text-white);
+	padding-inline: 3rem;
+	border-radius: var(--radius-pill);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	max-width: max-content;
+	transition: var(--transition-1);
+
+	@media (min-width: 720px) {
+		height: 60px;
+		padding-inline: 4rem;
+	}
+}
+
+.btn-primary {
+	background-color: var(--bg-majorelle-blue);
+
+	&:is(:hover, :focus-visible) {
+		background-color: var(--bg-ocean-blue);
+		box-shadow: var(--shadow-2);
+	}
+}
+
+.btn-secondary {
+	background-color: var(--bg-red-salsa);
+
+	&:is(:hover, :focus-visible) {
+		background-color: var(--bg-english-vermillion);
+		box-shadow: var(--shadow-3);
+	}
+}
+
+.section {
+	padding-block-end: var(--section-spacing);
+}
+
+.section__title {
+	margin-block: 1rem;
+}
+
+.section__subtitle {
+	color: var(--text-majorelle-blue);
+	font-weight: var(--fw-medium);
+	text-transform: uppercase;
+}
+
+.has-bg-img {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.title {
+	color: var(--text-gunmetal);
+	font-weight: var(--fw-semi-bold);
+	line-height: 1.45;
+}
+
+.h1 {
+	font-size: var(--fs-1);
+	line-height: 1.2;
+}
+
+.h2 {
+	font-size: var(--fs-2);
+}
+
+.h3 {
+	font-size: var(--fs-3);
+}
+.img-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: var(--transition-2);
+}
+
+.img-holder {
+	aspect-ratio: var(--width) / var(--heght);
+	background-color: var(--bg-gainsboro);
+	overflow: hidden;
+}
+
+.w-100 {
+	width: 100%;
+}
